@@ -61,7 +61,7 @@ var badWords = ["dumb", "evil", "devil", "ghost"];
 
 // i to ignore case
 
-var rgx = new RegExp(badWords.join("|"), "gi");
+var rgx = new RegExp(badWords.join("|"), "i");
 
 function filterWord(str) {
     return str.replace(rgx, "****");
