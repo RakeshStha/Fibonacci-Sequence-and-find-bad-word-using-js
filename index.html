@@ -1,0 +1,78 @@
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <title>Practise</title>
+
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body>
+        <h1 class="text-center m-5">Print the Fibonacci Sequence using normal function</h1>
+        <div class="text-center">
+                <label style="font-weight: 600; font-size: large;">Enter number</label>
+                <input type="number" id="number" />
+        </div>
+        <div class="text-center m-3">
+                <button type="submit" class="btn btn-primary mb-3" onclick="SubmitHandle()">Submit</button>
+
+                <p id="answers1" style="color: green; font-size: 20px;"></p>
+        </div>
+        <hr>
+        <h1 class="text-center m-5">Print the Fibonacci Sequence using recursion function</h1>
+        <div class="text-center">
+                <label style="font-weight: 600; font-size: large;">Enter number</label>
+                <input type="number" id="number_recursion" />
+        </div>
+        <div class="text-center m-3">
+                <button type="submit" class="btn btn-primary mb-3" onclick="SubmitHandlerecursion()">Submit</button>
+                <p id="answers2" style="color: green; font-size: 20px;"></p>
+        </div>
+
+        <hr>
+
+        <div class="jumbotron">
+          <h1 class="text-center m-5">Find bad words in Paragraph and convert it into ****</h1>
+            <p class="text-center" style="font-size: 20px; font-weight: 400;">Bad words: dumb, evil, devil, ghost, kill, death, bomb, hate.</p>
+            <hr class="my-4">
+            <p class="text-center">
+              <div class="row form-group d-flex align-items-center justify-content-center">
+                <div class="col-sm-6 form-group p-5">
+                  <textarea class="form-control" id="words" rows="3"></textarea>
+                </div>
+                <div class="col-sm-6 form-group p-5 ">
+                  <div id="to-active"  class="deactive">
+                    <h4 class="text-center">Changed Text</h4>
+                    <p id="checked-words" style="border: 1px grey solid; padding: 10px; font-size: 16px;"></p>
+                  </div>
+                  <button class="btn btn-primary btn-lg" onclick="CheckText()" >Check Text</button>
+                </div>
+              </div>
+            </p>
+        </div>
+
+        
+
+   
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
